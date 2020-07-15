@@ -8,6 +8,6 @@ public class ClassCTest
 	@Test
 	@DisplayName("testCaseC inside ClassCTest inside packageC")
 	public void testCaseC() {
-		
+		System.out.printf("HOLA");
 	}
 }
