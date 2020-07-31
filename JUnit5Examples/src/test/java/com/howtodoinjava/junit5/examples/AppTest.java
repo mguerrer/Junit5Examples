@@ -13,19 +13,19 @@ public class AppTest {
      
     @BeforeAll
     static void setup(){
-        System.out.println("@BeforeAll executed");
+        System.out.println("@BeforeAll ejecutado");
     }
      
     @BeforeEach
     void setupThis(){
-        System.out.println("@BeforeEach executed");
+        System.out.println("@BeforeEach ejecutado");
     }
      
     @Tag("DEV")
     @Test
     void testCalcOne()
     {
-        System.out.println("======TEST ONE EXECUTED=======");
+        System.out.println("======TEST 1 ejecutado=======");
         Assertions.assertEquals( 4 , Calculator.add(2, 2));
     }
      
@@ -34,17 +34,17 @@ public class AppTest {
     @Test
     void testCalcTwo()
     {
-        System.out.println("======TEST TWO EXECUTED=======");
+        System.out.println("======TEST 2 ejecutado=======");
         Assertions.assertEquals( 6 , Calculator.add(2, 4));
     }
      
     @AfterEach
     void tearThis(){
-        System.out.println("@AfterEach executed");
+        System.out.println("@AfterEach ejecutado");
     }
      
     @AfterAll
     static void tear(){
-        System.out.println("@AfterAll executed");
+        System.out.println("@AfterAll ejecutado");
     }
 }
